@@ -1,6 +1,8 @@
 package node
 
 import (
+	"angine-demo/app"
+
 	"gitlab.zhonganonline.com/ann/angine"
 	acfg "gitlab.zhonganonline.com/ann/angine/config"
 	cfg "gitlab.zhonganonline.com/ann/ann-module/lib/go-config"
@@ -27,6 +29,8 @@ func init() {
 func New() *Node {
 	println("conf2", conf.Get("environment").(string))
 	println("conf1", conf.Get("log_path").(string))
+
+	app.New()
 	angine.Initialize(&angine.AngineTunes{Conf: conf})
 	tune := angine.NewAngine(&angine.AngineTunes{Conf: conf})
 	return &Node{angine: tune}

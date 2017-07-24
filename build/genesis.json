@@ -1,0 +1,18 @@
+{
+	"app_hash": "",
+	"chain_id": "annchain-uIHrQG",
+	"genesis_time": "0001-01-01T00:00:00.000Z",
+	"plugins": "specialop",
+	"validators": [
+		{
+			"amount": 100,
+			"is_ca": true,
+			"name": "",
+			"pub_key": [
+				1,
+				"2C28B0D4E6302E03B946C6DE7B87F187FC951DA781253D35852DDE6A4123AE94"
+			],
+			"rpc": "tcp://0.0.0.0:16657"
+		}
+	]
+}

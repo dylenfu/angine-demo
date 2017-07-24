@@ -10,7 +10,7 @@ import (
 
 // Node include angine
 type Node struct {
-	angine *angine.Angine
+	mainEngine *angine.Angine
 }
 
 // NodeNum for angine prevote
@@ -33,15 +33,15 @@ func New() *Node {
 	app.New()
 	angine.Initialize(&angine.AngineTunes{Conf: conf})
 	tune := angine.NewAngine(&angine.AngineTunes{Conf: conf})
-	return &Node{angine: tune}
+	return &Node{mainEngine: tune}
 }
 
 // Start node
 func (node *Node) Start() {
-	node.angine.Start()
+	node.mainEngine.Start()
 }
 
 // Stop an node
 func (node *Node) Stop() {
-	node.angine.Stop()
+	node.mainEngine.Stop()
 }

@@ -7,6 +7,7 @@ import (
 	"flag"
 
 	acfg "gitlab.zhonganonline.com/ann/angine/config"
+	"gitlab.zhonganonline.com/ann/ann-module/lib/go-config"
 	"gitlab.zhonganonline.com/ann/civilwar/src/chain/log"
 )
 
@@ -17,12 +18,23 @@ const (
 )
 
 // DataDirFlag set seed direction
-var DataDirFlag = flag.String("datadir", "seed0", "set seed data dir")
+var (
+	DataDirFlag  = flag.String("datadir", "seed0", "set seed data dir")
+	InitSeedFlag = flag.Bool("init", false, "new config files")
+
+	annConf *config.MapConfig
+)
 
 func main() {
 	flag.Parse()
-	conf := acfg.GetConfig(root + *DataDirFlag)
-	env := conf.GetString("environment")
+	annConf = acfg.GetConfig(root + *DataDirFlag)
+	env := annConf.GetString("environment")
 	logger := log.Initialize(env, path.Join(logpath, "node.output.log"), path.Join(logpath, "node.err.log"))
-	node.RunNode(logger, conf)
+
+	if *InitSeedFlag == true {
+		node.Initfiles(annConf)
+	} else {
+		seed := node.New(logger, annConf)
+		seed.Run()
+	}
 }

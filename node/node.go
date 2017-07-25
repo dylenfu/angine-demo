@@ -13,6 +13,7 @@ import (
 	"gitlab.zhonganonline.com/ann/angine"
 	"gitlab.zhonganonline.com/ann/angine/types"
 	cmn "gitlab.zhonganonline.com/ann/ann-module/lib/go-common"
+	"gitlab.zhonganonline.com/ann/ann-module/lib/go-config"
 	cfg "gitlab.zhonganonline.com/ann/ann-module/lib/go-config"
 	"gitlab.zhonganonline.com/ann/ann-module/lib/go-crypto"
 	"gitlab.zhonganonline.com/ann/ann-module/lib/go-p2p"
@@ -35,12 +36,15 @@ type Node struct {
 	GenesisDoc  *types.GenesisDoc
 }
 
-// NewNode initialize angine first, then newAngine
-func NewNode(logger *zap.Logger, config cfg.Config) *Node {
+// Initfiles new config files if not exist
+func Initfiles(conf *config.MapConfig) {
+	angine.Initialize(&angine.AngineTunes{Conf: conf})
+}
+
+// New implement node struct
+func New(logger *zap.Logger, config cfg.Config) *Node {
 	conf := config.(*cfg.MapConfig)
 	tune := &angine.AngineTunes{Conf: conf}
-	angine.Initialize(tune)
-
 	mainAngine := angine.NewAngine(tune)
 	shardApp := NewShardingApp(logger, conf)
 	publicKey := mainAngine.PrivValidator().PubKey.(crypto.PubKeyEd25519)
@@ -65,9 +69,10 @@ func NewNode(logger *zap.Logger, config cfg.Config) *Node {
 	return node
 }
 
-// RunNode sync rest server
-func RunNode(logger *zap.Logger, config cfg.Config) {
-	node := NewNode(logger, config)
+// Run sync rest server
+func (node *Node) Run() {
+	config := node.config
+
 	if err := node.start(); err != nil {
 		cmn.Exit(cmn.Fmt("Failed to start node: %v", err))
 	}
@@ -91,7 +96,7 @@ func RunNode(logger *zap.Logger, config cfg.Config) {
 	})
 }
 
-// Start Call Start() after adding the listeners.
+// start adding the listeners.
 func (n *Node) start() error {
 	if atomic.CompareAndSwapInt64(&n.running, 0, 1) {
 		n.Application.Start()

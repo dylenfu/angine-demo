@@ -1,3 +1,34 @@
 2017-07-25T17:48:06.592+0800	DEBUG	log/zap.go:24	Starting zap! Have your fun!
 2017-07-25T17:53:51.835+0800	DEBUG	log/zap.go:24	Starting zap! Have your fun!
 2017-07-25T17:57:40.483+0800	INFO	node/node.go:104	Stopping Node
+2017-07-25T18:49:35.007+0800	DEBUG	log/zap.go:24	Starting zap! Have your fun!
+2017-07-25T18:49:38.803+0800	INFO	node/node.go:108	Stopping Node
+2017-07-25T18:50:37.600+0800	DEBUG	log/zap.go:24	Starting zap! Have your fun!
+2017-07-25T18:50:41.624+0800	INFO	node/node.go:108	Stopping Node
+2017-07-25T18:51:51.220+0800	DEBUG	log/zap.go:24	Starting zap! Have your fun!
+2017-07-25T18:51:57.202+0800	INFO	node/node.go:108	Stopping Node
+2017-07-25T18:54:19.157+0800	DEBUG	log/zap.go:24	Starting zap! Have your fun!
+2017-07-25T18:54:28.654+0800	INFO	node/node.go:110	Stopping Node
+2017-07-25T18:54:55.432+0800	DEBUG	log/zap.go:24	Starting zap! Have your fun!
+2017-07-25T18:54:58.819+0800	INFO	node/node.go:110	Stopping Node
+2017-07-25T18:55:19.605+0800	DEBUG	log/zap.go:24	Starting zap! Have your fun!
+2017-07-25T18:55:25.683+0800	INFO	node/node.go:110	Stopping Node
+2017-07-25T18:55:40.684+0800	DEBUG	log/zap.go:24	Starting zap! Have your fun!
+2017-07-25T18:55:43.918+0800	INFO	node/node.go:110	Stopping Node
+2017-07-25T19:07:52.888+0800	DEBUG	log/zap.go:24	Starting zap! Have your fun!
+2017-07-25T19:07:56.816+0800	INFO	node/node.go:108	Stopping Node
+2017-07-25T19:08:30.450+0800	DEBUG	log/zap.go:24	Starting zap! Have your fun!
+2017-07-25T19:08:35.606+0800	INFO	node/node.go:108	Stopping Node
+2017-07-25T19:09:40.033+0800	DEBUG	log/zap.go:24	Starting zap! Have your fun!
+2017-07-25T19:09:45.035+0800	INFO	node/node.go:108	Stopping Node
+2017-07-25T19:23:36.781+0800	DEBUG	log/zap.go:24	Starting zap! Have your fun!
+2017-07-25T19:23:44.920+0800	INFO	node/node.go:111	Stopping Node
+2017-07-25T19:27:41.481+0800	DEBUG	log/zap.go:24	Starting zap! Have your fun!
+2017-07-25T19:27:43.749+0800	INFO	node/node.go:111	Stopping Node
+2017-07-25T19:27:48.684+0800	DEBUG	log/zap.go:24	Starting zap! Have your fun!
+2017-07-25T19:27:52.033+0800	INFO	node/node.go:111	Stopping Node
+2017-07-25T19:27:57.089+0800	DEBUG	log/zap.go:24	Starting zap! Have your fun!
+2017-07-25T19:28:01.437+0800	INFO	node/node.go:111	Stopping Node
+2017-07-25T19:37:25.093+0800	DEBUG	log/zap.go:24	Starting zap! Have your fun!
+2017-07-25T19:38:02.704+0800	DEBUG	log/zap.go:24	Starting zap! Have your fun!
+2017-07-25T19:38:08.271+0800	INFO	node/node.go:109	Stopping Node

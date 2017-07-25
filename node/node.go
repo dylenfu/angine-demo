@@ -1,47 +1,127 @@
 package node
 
 import (
-	"angine-demo/app"
+	"fmt"
+	"net/http"
+	_ "net/http/pprof"
+	"strconv"
+	"sync/atomic"
+	"time"
+
+	"go.uber.org/zap"
 
 	"gitlab.zhonganonline.com/ann/angine"
-	acfg "gitlab.zhonganonline.com/ann/angine/config"
+	"gitlab.zhonganonline.com/ann/angine/types"
+	cmn "gitlab.zhonganonline.com/ann/ann-module/lib/go-common"
 	cfg "gitlab.zhonganonline.com/ann/ann-module/lib/go-config"
+	"gitlab.zhonganonline.com/ann/ann-module/lib/go-crypto"
+	"gitlab.zhonganonline.com/ann/ann-module/lib/go-p2p"
+	"gitlab.zhonganonline.com/ann/ann-module/lib/go-wire"
+	"gitlab.zhonganonline.com/ann/civilwar/src/chain/version"
 )
 
-// Node include angine
 type Node struct {
-	mainEngine *angine.Angine
+	MainChainID   string
+	running       int64
+	config        cfg.Config
+	privValidator *types.PrivValidator
+	nodeInfo      *p2p.NodeInfo
+
+	logger *zap.Logger
+
+	Angine      *angine.Angine
+	AngineTune  *angine.AngineTunes
+	Application types.Application
+	GenesisDoc  *types.GenesisDoc
 }
 
-// NodeNum for angine prevote
-const (
-	NodeNum  = 4
-	confPath = "/home/vagrant/gohome/src/angine-demo/build"
-)
+// NewNode initialize angine first, then newAngine
+func NewNode(logger *zap.Logger, config cfg.Config) *Node {
+	conf := config.(*cfg.MapConfig)
+	tune := &angine.AngineTunes{Conf: conf}
+	angine.Initialize(tune)
 
-var conf *cfg.MapConfig
+	mainAngine := angine.NewAngine(tune)
+	shardApp := NewShardingApp(logger, conf)
+	publicKey := mainAngine.PrivValidator().PubKey.(crypto.PubKeyEd25519)
+	mainAngine.ConnectApp(shardApp)
 
-func init() {
-	conf = acfg.GetConfig(confPath)
+	node := &Node{
+		MainChainID:   mainAngine.Genesis().ChainID,
+		config:        conf,
+		privValidator: mainAngine.PrivValidator(),
+		nodeInfo:      makeNodeInfo(conf, publicKey, mainAngine.P2PHost(), mainAngine.P2PPort()),
+		logger:        logger,
+		Angine:        mainAngine,
+		AngineTune:    tune,
+		Application:   shardApp,
+		GenesisDoc:    mainAngine.Genesis(),
+	}
+
+	mainAngine.RegisterNodeInfo(node.nodeInfo)
+
+	//	shardApp.setNode(node)
+
+	return node
 }
 
-// New node
-func New() *Node {
-	println("conf2", conf.Get("environment").(string))
-	println("conf1", conf.Get("log_path").(string))
+// RunNode sync rest server
+func RunNode(logger *zap.Logger, config cfg.Config) {
+	node := NewNode(logger, config)
+	if err := node.start(); err != nil {
+		cmn.Exit(cmn.Fmt("Failed to start node: %v", err))
+	}
 
-	app.New()
-	angine.Initialize(&angine.AngineTunes{Conf: conf})
-	tune := angine.NewAngine(&angine.AngineTunes{Conf: conf})
-	return &Node{mainEngine: tune}
+	// if config.GetString("rpc_laddr") != "" {
+	// 	if _, err := node.StartRPC(); err != nil {
+	// 		cmn.PanicCrisis(err)
+	// 	}
+	// }
+
+	if config.GetBool("pprof") {
+		go func() {
+			http.ListenAndServe(":6060", nil)
+		}()
+	}
+
+	fmt.Printf("node (%s) is running on %s:%d ......\n", node.MainChainID, node.nodeInfo.ListenHost(), node.nodeInfo.ListenPort())
+
+	cmn.TrapSignal(func() {
+		node.stop()
+	})
 }
 
-// Start node
-func (node *Node) Start() {
-	node.mainEngine.Start()
+// Start Call Start() after adding the listeners.
+func (n *Node) start() error {
+	if atomic.CompareAndSwapInt64(&n.running, 0, 1) {
+		n.Application.Start()
+		return n.Angine.Start()
+	}
+	return fmt.Errorf("already started")
 }
 
-// Stop an node
-func (node *Node) Stop() {
-	node.mainEngine.Stop()
+func (n *Node) stop() {
+	n.logger.Info("Stopping Node")
+	n.Application.Stop()
+	n.Angine.Stop()
+}
+
+func makeNodeInfo(config cfg.Config, pubkey crypto.PubKeyEd25519, p2pHost string, p2pPort uint16) *p2p.NodeInfo {
+	nodeInfo := &p2p.NodeInfo{
+		PubKey:      pubkey,
+		Moniker:     config.GetString("moniker"),
+		Network:     config.GetString("chain_id"),
+		SigndPubKey: config.GetString("signbyCA"),
+		Version:     version.GetVersion(),
+		Other: []string{
+			cmn.Fmt("wire_version=%v", wire.Version),
+			cmn.Fmt("p2p_version=%v", p2p.Version),
+			cmn.Fmt("node_start_at=%s", strconv.FormatInt(time.Now().Unix(), 10)),
+			cmn.Fmt("revision=%s", version.GetCommitVersion()),
+		},
+		RemoteAddr: config.GetString("rpc_laddr"),
+		ListenAddr: cmn.Fmt("%v:%v", p2pHost, p2pPort),
+	}
+
+	return nodeInfo
 }

@@ -1,4 +1,6 @@
+angine-demo
 .build/
 .angine-annchain-0XeYvW/
-*seed
-*angine-annchain
+seed*
+log*
+angine-annchain*

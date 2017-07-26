@@ -34,7 +34,6 @@ func main() {
 	if *InitSeedFlag == true {
 		node.Initfiles(annConf)
 	} else {
-		seed := node.New(logger, annConf)
-		seed.Run()
+		node.RunNode(logger, annConf)
 	}
 }

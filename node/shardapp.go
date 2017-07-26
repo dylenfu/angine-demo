@@ -279,47 +279,26 @@ func (app *ShardingApp) SaveLastBlock(lastBlock LastBlockInfo) {
 }
 
 func (app *ShardingApp) CheckTx(bs []byte) error {
-	if !app.IsShardingTx(bs) {
-		return ErrUnknownTx
-	}
-
-	txBytes := types.UnwrapTx(bs)
-	tx := ShardingTx{}
-	if err := json.Unmarshal(txBytes, &tx); err != nil {
-		app.logger.Info("Unmarshal tx failed", zap.Binary("tx", txBytes), zap.String("error", err.Error()))
-		return err
-	}
-
-	sig := tx.Signature
-	tx.Signature = [64]byte{}
-	pubkey, ok := app.node.PrivValidator().PubKey.(crypto.PubKeyEd25519)
-	if !ok {
-		return fmt.Errorf("my key is not crypto.PubKeyEd25519")
-	}
-	if !tx.VerifySignature(pubkey, sig) {
-		return fmt.Errorf("wrong tx for wrong node: %X", pubkey)
-	}
-
-	switch tx.Act {
-	case ShardJoin:
-		app.mtx.Lock()
-		if _, ok := app.RunningChainIDs[tx.ChainID]; ok {
-			app.mtx.Unlock()
-			return fmt.Errorf("already joined: %s", tx.ChainID)
-		}
-		app.mtx.Unlock()
-	case ShardLeave:
-		app.mtx.Lock()
-		if _, ok := app.RunningChainIDs[tx.ChainID]; !ok {
-			app.mtx.Unlock()
-			return fmt.Errorf("not in shard: %s", tx.ChainID)
-		}
-		app.mtx.Unlock()
-	default:
-		return fmt.Errorf("unimplemented act: %v", tx.Act)
-	}
-
 	return nil
+
+	// txBytes := types.UnwrapTx(bs)
+	// tx := ShardingTx{}
+	// if err := json.Unmarshal(txBytes, &tx); err != nil {
+	// 	app.logger.Info("Unmarshal tx failed", zap.Binary("tx", txBytes), zap.String("error", err.Error()))
+	// 	return err
+	// }
+
+	// sig := tx.Signature
+	// tx.Signature = [64]byte{}
+	// pubkey, ok := app.node.PrivValidator().PubKey.(crypto.PubKeyEd25519)
+	// if !ok {
+	// 	return fmt.Errorf("my key is not crypto.PubKeyEd25519")
+	// }
+	// if !tx.VerifySignature(pubkey, sig) {
+	// 	return fmt.Errorf("wrong tx for wrong node: %X", pubkey)
+	// }
+
+	// return nil
 }
 
 func (app *ShardingApp) Info() (resInfo types.ResultInfo) {

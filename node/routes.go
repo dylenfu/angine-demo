@@ -100,17 +100,18 @@ func (n *Node) rpcRoutes() map[string]*rpc.RPCFunc {
 	}
 }
 
-type MyResult struct {
+type AccountResult struct {
 	Amount int `json:"amount"`
 }
 
-func (h *rpcHandler) getAccount(chainId string, address string) (MyResult, error) {
-	return MyResult{Amount: 10}, nil
-	// if amount, ok := managedState.accounts[address]; ok {
-	// 	return amount
-	// } else {
-	// 	return 0
-	// }
+func (h *rpcHandler) getAccount(chainId string, address string) (AccountResult, error) {
+	var res = 0
+	if amount, ok := managedState.accounts[address]; ok {
+		res = amount
+	} else {
+		res = 0
+	}
+	return AccountResult{Amount: res}, nil
 }
 
 func (h *rpcHandler) getShard(chainID string) (*ShardNode, error) {

@@ -94,6 +94,17 @@ func (n *Node) rpcRoutes() map[string]*rpc.RPCFunc {
 
 		// sharding API
 		// "shard_join": rpc.NewRPCFunc(h.ShardJoin, "gdata,cdata,sig"),
+
+		// get account api
+		"get_account": rpc.NewRPCFunc(h.getAccount, argsWithChainID("")),
+	}
+}
+
+func (h *rpcHandler) getAccount(address string) int {
+	if amount, ok := managedState.accounts[address]; ok {
+		return amount
+	} else {
+		return 0
 	}
 }
 

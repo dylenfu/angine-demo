@@ -35,3 +35,5 @@
 2017-07-26T18:38:46.411+0800	DEBUG	log/zap.go:24	Starting zap! Have your fun!
 2017-07-26T18:38:48.941+0800	INFO	server/http_server.go:36	Starting RPC HTTP server on tcp socket 0.0.0.0:46657
 2017-07-26T18:38:55.000+0800	INFO	node/node.go:113	Stopping Node
+2017-07-26T18:43:42.070+0800	DEBUG	log/zap.go:24	Starting zap! Have your fun!
+2017-07-26T18:43:42.584+0800	INFO	server/http_server.go:36	Starting RPC HTTP server on tcp socket 0.0.0.0:46657

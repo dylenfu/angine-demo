@@ -183,14 +183,15 @@ func (app *ShardingApp) ExecuteTx(blockHash []byte, bs []byte, txIndex int) (val
 		return bs, nil
 	}
 
-	_, srcExist := managedState.accounts[tx.SourceAddress]
-	_, destExist := managedState.accounts[tx.DestAddress]
-	if srcExist && destExist {
-		managedState.accounts[tx.SourceAddress] += tx.Amount
-		managedState.accounts[tx.DestAddress] -= tx.Amount
-	} else {
-		return nil, ErrUnknownTx
+	baseAmount := 1000000
+	if _, srcExist := managedState.accounts[tx.SourceAddress]; !srcExist {
+		managedState.accounts[tx.SourceAddress] = baseAmount
 	}
+	if _, destExist := managedState.accounts[tx.DestAddress]; !destExist {
+		managedState.accounts[tx.DestAddress] = baseAmount
+	}
+	managedState.accounts[tx.SourceAddress] += tx.Amount
+	managedState.accounts[tx.DestAddress] -= tx.Amount
 
 	switch tx.Act {
 	case ShardJoin:

@@ -37,3 +37,556 @@
 2017-07-26T18:38:55.000+0800	INFO	node/node.go:113	Stopping Node
 2017-07-26T18:43:42.070+0800	DEBUG	log/zap.go:24	Starting zap! Have your fun!
 2017-07-26T18:43:42.584+0800	INFO	server/http_server.go:36	Starting RPC HTTP server on tcp socket 0.0.0.0:46657
+2017-07-26T20:42:02.447+0800	INFO	node/node.go:113	Stopping Node
+2017-07-26T20:42:15.857+0800	DEBUG	log/zap.go:24	Starting zap! Have your fun!
+2017-07-26T20:42:17.387+0800	INFO	server/http_server.go:36	Starting RPC HTTP server on tcp socket 0.0.0.0:46657
+2017-07-26T20:43:05.941+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48306"}
+2017-07-26T20:43:06.108+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/favicon.ico", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48306"}
+2017-07-26T20:43:18.749+0800	DEBUG	server/handlers.go:207	HTTP HANDLER	{"reqError": "json: unsupported type: func() (io.ReadCloser, error)"}
+2017-07-26T20:43:18.750+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/get_account?chainid=_", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48310"}
+2017-07-26T20:43:18.882+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/favicon.ico", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48310"}
+2017-07-26T20:43:20.913+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/favicon.ico", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48310"}
+2017-07-26T20:44:45.247+0800	DEBUG	server/handlers.go:207	HTTP HANDLER	{"reqError": "json: unsupported type: func() (io.ReadCloser, error)"}
+2017-07-26T20:44:45.247+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/broadcast_tx_sync?chainid=_&tx=_", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48346"}
+2017-07-26T20:44:45.406+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/favicon.ico", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48346"}
+2017-07-26T20:45:12.208+0800	DEBUG	server/handlers.go:207	HTTP HANDLER	{"reqError": "json: unsupported type: func() (io.ReadCloser, error)"}
+2017-07-26T20:45:12.208+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/broadcast_tx_sync?chainid=annchain-test&tx=%22asdf%22", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48352"}
+2017-07-26T20:45:12.364+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/favicon.ico", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48352"}
+2017-07-26T20:45:32.623+0800	DEBUG	server/handlers.go:207	HTTP HANDLER	{"reqError": "json: unsupported type: func() (io.ReadCloser, error)"}
+2017-07-26T20:45:32.624+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/broadcast_tx_sync?chainid=annchain-test&tx=ab", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48358"}
+2017-07-26T20:45:32.790+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/favicon.ico", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48358"}
+2017-07-26T20:47:57.401+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/favicon.ico", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48534"}
+2017-07-26T20:47:58.047+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/favicon.ico", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48534"}
+2017-07-26T20:47:58.679+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/favicon.ico", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48534"}
+2017-07-26T20:48:02.036+0800	DEBUG	server/handlers.go:207	HTTP HANDLER	{"reqError": "json: unsupported type: func() (io.ReadCloser, error)"}
+2017-07-26T20:48:02.036+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/get_account?chainid=_", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48534"}
+2017-07-26T20:48:02.236+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/favicon.ico", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48534"}
+2017-07-26T20:48:18.749+0800	DEBUG	server/handlers.go:207	HTTP HANDLER	{"reqError": "json: unsupported type: func() (io.ReadCloser, error)"}
+2017-07-26T20:48:18.750+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/get_account?chainid=annchain-test", "status": 200, "duration": 1, "remoteAddr": "127.0.0.1:48546"}
+2017-07-26T20:48:18.812+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/favicon.ico", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48546"}
+2017-07-26T20:48:25.094+0800	DEBUG	server/handlers.go:207	HTTP HANDLER	{"reqError": "json: unsupported type: func() (io.ReadCloser, error)"}
+2017-07-26T20:48:25.094+0800	DEBUG	server/handlers.go:214	HTTPRestRPC	{"method": "/get_account", "args": [{"flag":408}], "returns": [{"flag":130}]}
+2017-07-26T20:48:25.094+0800	ERROR	server/http_server.go:94	Panic in RPC HTTP handler	{"error": "runtime error: index out of range", "stack": "goroutine 1221 [running]:\nruntime/debug.Stack(0x9ab760, 0xc4221c6c00, 0xdbc590)\n\t/home/vagrant/go/src/runtime/debug/stack.go:24 +0x79\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1.1(0xc4228f57a0, 0xc420130b40, 0xed10a8699, 0xc405a2c646, 0xdcb580, 0xc421618200)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:94 +0x8d8\npanic(0x950700, 0xdbc590)\n\t/home/vagrant/go/src/runtime/panic.go:489 +0x2cf\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.unreflectResult(0xc4228f59a0, 0x1, 0x1, 0xc422841b58, 0x6, 0x6, 0xc4228f59a0)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/handlers.go:576 +0x27a\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.makeHTTPHandler.func2(0xd8cda0, 0xc4228f57a0, 0xc421618200)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/handlers.go:215 +0x54d\nnet/http.HandlerFunc.ServeHTTP(0xc421f3c520, 0xd8cda0, 0xc4228f57a0, 0xc421618200)\n\t/home/vagrant/go/src/net/http/server.go:1942 +0x44\nnet/http.(*ServeMux).ServeHTTP(0xc420017c20, 0xd8cda0, 0xc4228f57a0, 0xc421618200)\n\t/home/vagrant/go/src/net/http/server.go:2238 +0x130\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1(0xd8d020, 0xc4221d67e0, 0xc421618200)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:111 +0x374\nnet/http.HandlerFunc.ServeHTTP(0xc421f42000, 0xd8d020, 0xc4221d67e0, 0xc421618200)\n\t/home/vagrant/go/src/net/http/server.go:1942 +0x44\nnet/http.serverHandler.ServeHTTP(0xc421f44000, 0xd8d020, 0xc4221d67e0, 0xc421618200)\n\t/home/vagrant/go/src/net/http/server.go:2568 +0x92\nnet/http.(*conn).serve(0xc421ec7b80, 0xd8d8e0, 0xc4229cf700)\n\t/home/vagrant/go/src/net/http/server.go:1825 +0x612\ncreated by net/http.(*Server).Serve\n\t/home/vagrant/go/src/net/http/server.go:2668 +0x2ce\n"}
+go.uber.org/zap.Stack
+	/home/vagrant/gohome/src/go.uber.org/zap/field.go:190
+go.uber.org/zap.(*Logger).check
+	/home/vagrant/gohome/src/go.uber.org/zap/logger.go:273
+go.uber.org/zap.(*Logger).Check
+	/home/vagrant/gohome/src/go.uber.org/zap/logger.go:146
+go.uber.org/zap.(*SugaredLogger).log
+	/home/vagrant/gohome/src/go.uber.org/zap/sugar.go:224
+go.uber.org/zap.(*SugaredLogger).Errorw
+	/home/vagrant/gohome/src/go.uber.org/zap/sugar.go:182
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1.1
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:94
+runtime.call64
+	/home/vagrant/go/src/runtime/asm_amd64.s:515
+runtime.gopanic
+	/home/vagrant/go/src/runtime/panic.go:489
+runtime.panicindex
+	/home/vagrant/go/src/runtime/panic.go:28
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.unreflectResult
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/handlers.go:576
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.makeHTTPHandler.func2
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/handlers.go:215
+net/http.HandlerFunc.ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:1942
+net/http.(*ServeMux).ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:2238
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:111
+net/http.HandlerFunc.ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:1942
+net/http.serverHandler.ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:2568
+net/http.(*conn).serve
+	/home/vagrant/go/src/net/http/server.go:1825
+2017-07-26T20:48:25.094+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/get_account?chainid=%22annchain-test%22", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48552"}
+2017-07-26T20:48:25.158+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/favicon.ico", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48552"}
+2017-07-26T20:49:17.079+0800	INFO	node/node.go:113	Stopping Node
+2017-07-26T20:49:21.457+0800	DEBUG	log/zap.go:24	Starting zap! Have your fun!
+2017-07-26T20:49:22.320+0800	INFO	server/http_server.go:36	Starting RPC HTTP server on tcp socket 0.0.0.0:46657
+2017-07-26T20:49:27.366+0800	DEBUG	server/handlers.go:207	HTTP HANDLER	{"reqError": "json: unsupported type: func() (io.ReadCloser, error)"}
+2017-07-26T20:49:27.366+0800	DEBUG	server/handlers.go:214	HTTPRestRPC	{"method": "/get_account", "args": [{"flag":408}], "returns": [{"flag":130}]}
+2017-07-26T20:49:27.367+0800	ERROR	server/http_server.go:94	Panic in RPC HTTP handler	{"error": "runtime error: index out of range", "stack": "goroutine 77 [running]:\nruntime/debug.Stack(0x9ab760, 0xc421ef0c00, 0xdbc590)\n\t/home/vagrant/go/src/runtime/debug/stack.go:24 +0x79\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1.1(0xc420490c40, 0xc42006f500, 0xed10a86d7, 0xc415d8ffb8, 0xdcb580, 0xc4229dfc00)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:94 +0x8d8\npanic(0x950700, 0xdbc590)\n\t/home/vagrant/go/src/runtime/panic.go:489 +0x2cf\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.unreflectResult(0xc420491b60, 0x1, 0x1, 0xc421ee5b58, 0x6, 0x6, 0xc420491b60)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/handlers.go:576 +0x27a\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.makeHTTPHandler.func2(0xd8cda0, 0xc420490c40, 0xc4229dfc00)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/handlers.go:215 +0x54d\nnet/http.HandlerFunc.ServeHTTP(0xc4202671e0, 0xd8cda0, 0xc420490c40, 0xc4229dfc00)\n\t/home/vagrant/go/src/net/http/server.go:1942 +0x44\nnet/http.(*ServeMux).ServeHTTP(0xc42042b230, 0xd8cda0, 0xc420490c40, 0xc4229dfc00)\n\t/home/vagrant/go/src/net/http/server.go:2238 +0x130\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1(0xd8d020, 0xc420102d20, 0xc4229dfc00)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:111 +0x374\nnet/http.HandlerFunc.ServeHTTP(0xc42025c180, 0xd8d020, 0xc420102d20, 0xc4229dfc00)\n\t/home/vagrant/go/src/net/http/server.go:1942 +0x44\nnet/http.serverHandler.ServeHTTP(0xc420262160, 0xd8d020, 0xc420102d20, 0xc4229dfc00)\n\t/home/vagrant/go/src/net/http/server.go:2568 +0x92\nnet/http.(*conn).serve(0xc4202c95e0, 0xd8d8e0, 0xc422a0c1c0)\n\t/home/vagrant/go/src/net/http/server.go:1825 +0x612\ncreated by net/http.(*Server).Serve\n\t/home/vagrant/go/src/net/http/server.go:2668 +0x2ce\n"}
+go.uber.org/zap.Stack
+	/home/vagrant/gohome/src/go.uber.org/zap/field.go:190
+go.uber.org/zap.(*Logger).check
+	/home/vagrant/gohome/src/go.uber.org/zap/logger.go:273
+go.uber.org/zap.(*Logger).Check
+	/home/vagrant/gohome/src/go.uber.org/zap/logger.go:146
+go.uber.org/zap.(*SugaredLogger).log
+	/home/vagrant/gohome/src/go.uber.org/zap/sugar.go:224
+go.uber.org/zap.(*SugaredLogger).Errorw
+	/home/vagrant/gohome/src/go.uber.org/zap/sugar.go:182
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1.1
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:94
+runtime.call64
+	/home/vagrant/go/src/runtime/asm_amd64.s:515
+runtime.gopanic
+	/home/vagrant/go/src/runtime/panic.go:489
+runtime.panicindex
+	/home/vagrant/go/src/runtime/panic.go:28
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.unreflectResult
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/handlers.go:576
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.makeHTTPHandler.func2
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/handlers.go:215
+net/http.HandlerFunc.ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:1942
+net/http.(*ServeMux).ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:2238
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:111
+net/http.HandlerFunc.ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:1942
+net/http.serverHandler.ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:2568
+net/http.(*conn).serve
+	/home/vagrant/go/src/net/http/server.go:1825
+2017-07-26T20:49:27.367+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/get_account?chainid=%22annchain-test%22", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48576"}
+2017-07-26T20:49:27.533+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/favicon.ico", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48576"}
+2017-07-26T20:49:28.296+0800	DEBUG	server/handlers.go:207	HTTP HANDLER	{"reqError": "json: unsupported type: func() (io.ReadCloser, error)"}
+2017-07-26T20:49:28.296+0800	DEBUG	server/handlers.go:214	HTTPRestRPC	{"method": "/get_account", "args": [{"flag":408}], "returns": [{"flag":130}]}
+2017-07-26T20:49:28.296+0800	ERROR	server/http_server.go:94	Panic in RPC HTTP handler	{"error": "runtime error: index out of range", "stack": "goroutine 77 [running]:\nruntime/debug.Stack(0x9ab760, 0xc422a0e4e0, 0xdbc590)\n\t/home/vagrant/go/src/runtime/debug/stack.go:24 +0x79\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1.1(0xc4229f9160, 0xc42006f500, 0xed10a86d8, 0xc411a594ba, 0xdcb580, 0xc4227a2000)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:94 +0x8d8\npanic(0x950700, 0xdbc590)\n\t/home/vagrant/go/src/runtime/panic.go:489 +0x2cf\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.unreflectResult(0xc4229f9320, 0x1, 0x1, 0xc421ee5b58, 0x6, 0x6, 0xc4229f9320)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/handlers.go:576 +0x27a\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.makeHTTPHandler.func2(0xd8cda0, 0xc4229f9160, 0xc4227a2000)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/handlers.go:215 +0x54d\nnet/http.HandlerFunc.ServeHTTP(0xc4202671e0, 0xd8cda0, 0xc4229f9160, 0xc4227a2000)\n\t/home/vagrant/go/src/net/http/server.go:1942 +0x44\nnet/http.(*ServeMux).ServeHTTP(0xc42042b230, 0xd8cda0, 0xc4229f9160, 0xc4227a2000)\n\t/home/vagrant/go/src/net/http/server.go:2238 +0x130\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1(0xd8d020, 0xc4229f61c0, 0xc4227a2000)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:111 +0x374\nnet/http.HandlerFunc.ServeHTTP(0xc42025c180, 0xd8d020, 0xc4229f61c0, 0xc4227a2000)\n\t/home/vagrant/go/src/net/http/server.go:1942 +0x44\nnet/http.serverHandler.ServeHTTP(0xc420262160, 0xd8d020, 0xc4229f61c0, 0xc4227a2000)\n\t/home/vagrant/go/src/net/http/server.go:2568 +0x92\nnet/http.(*conn).serve(0xc4202c95e0, 0xd8d8e0, 0xc422a0c1c0)\n\t/home/vagrant/go/src/net/http/server.go:1825 +0x612\ncreated by net/http.(*Server).Serve\n\t/home/vagrant/go/src/net/http/server.go:2668 +0x2ce\n"}
+go.uber.org/zap.Stack
+	/home/vagrant/gohome/src/go.uber.org/zap/field.go:190
+go.uber.org/zap.(*Logger).check
+	/home/vagrant/gohome/src/go.uber.org/zap/logger.go:273
+go.uber.org/zap.(*Logger).Check
+	/home/vagrant/gohome/src/go.uber.org/zap/logger.go:146
+go.uber.org/zap.(*SugaredLogger).log
+	/home/vagrant/gohome/src/go.uber.org/zap/sugar.go:224
+go.uber.org/zap.(*SugaredLogger).Errorw
+	/home/vagrant/gohome/src/go.uber.org/zap/sugar.go:182
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1.1
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:94
+runtime.call64
+	/home/vagrant/go/src/runtime/asm_amd64.s:515
+runtime.gopanic
+	/home/vagrant/go/src/runtime/panic.go:489
+runtime.panicindex
+	/home/vagrant/go/src/runtime/panic.go:28
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.unreflectResult
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/handlers.go:576
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.makeHTTPHandler.func2
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/handlers.go:215
+net/http.HandlerFunc.ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:1942
+net/http.(*ServeMux).ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:2238
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:111
+net/http.HandlerFunc.ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:1942
+net/http.serverHandler.ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:2568
+net/http.(*conn).serve
+	/home/vagrant/go/src/net/http/server.go:1825
+2017-07-26T20:49:28.296+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/get_account?chainid=%22annchain-test%22", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48576"}
+2017-07-26T20:49:28.351+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/favicon.ico", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48576"}
+2017-07-26T20:49:28.450+0800	DEBUG	server/handlers.go:207	HTTP HANDLER	{"reqError": "json: unsupported type: func() (io.ReadCloser, error)"}
+2017-07-26T20:49:28.450+0800	DEBUG	server/handlers.go:214	HTTPRestRPC	{"method": "/get_account", "args": [{"flag":408}], "returns": [{"flag":130}]}
+2017-07-26T20:49:28.450+0800	ERROR	server/http_server.go:94	Panic in RPC HTTP handler	{"error": "runtime error: index out of range", "stack": "goroutine 77 [running]:\nruntime/debug.Stack(0x9ab760, 0xc422a0e720, 0xdbc590)\n\t/home/vagrant/go/src/runtime/debug/stack.go:24 +0x79\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1.1(0xc4229f9500, 0xc42006f500, 0xed10a86d8, 0xc41adec03a, 0xdcb580, 0xc4227a2200)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:94 +0x8d8\npanic(0x950700, 0xdbc590)\n\t/home/vagrant/go/src/runtime/panic.go:489 +0x2cf\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.unreflectResult(0xc4229f96c0, 0x1, 0x1, 0xc421ee5b58, 0x6, 0x6, 0xc4229f96c0)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/handlers.go:576 +0x27a\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.makeHTTPHandler.func2(0xd8cda0, 0xc4229f9500, 0xc4227a2200)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/handlers.go:215 +0x54d\nnet/http.HandlerFunc.ServeHTTP(0xc4202671e0, 0xd8cda0, 0xc4229f9500, 0xc4227a2200)\n\t/home/vagrant/go/src/net/http/server.go:1942 +0x44\nnet/http.(*ServeMux).ServeHTTP(0xc42042b230, 0xd8cda0, 0xc4229f9500, 0xc4227a2200)\n\t/home/vagrant/go/src/net/http/server.go:2238 +0x130\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1(0xd8d020, 0xc4229f62a0, 0xc4227a2200)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:111 +0x374\nnet/http.HandlerFunc.ServeHTTP(0xc42025c180, 0xd8d020, 0xc4229f62a0, 0xc4227a2200)\n\t/home/vagrant/go/src/net/http/server.go:1942 +0x44\nnet/http.serverHandler.ServeHTTP(0xc420262160, 0xd8d020, 0xc4229f62a0, 0xc4227a2200)\n\t/home/vagrant/go/src/net/http/server.go:2568 +0x92\nnet/http.(*conn).serve(0xc4202c95e0, 0xd8d8e0, 0xc422a0c1c0)\n\t/home/vagrant/go/src/net/http/server.go:1825 +0x612\ncreated by net/http.(*Server).Serve\n\t/home/vagrant/go/src/net/http/server.go:2668 +0x2ce\n"}
+go.uber.org/zap.Stack
+	/home/vagrant/gohome/src/go.uber.org/zap/field.go:190
+go.uber.org/zap.(*Logger).check
+	/home/vagrant/gohome/src/go.uber.org/zap/logger.go:273
+go.uber.org/zap.(*Logger).Check
+	/home/vagrant/gohome/src/go.uber.org/zap/logger.go:146
+go.uber.org/zap.(*SugaredLogger).log
+	/home/vagrant/gohome/src/go.uber.org/zap/sugar.go:224
+go.uber.org/zap.(*SugaredLogger).Errorw
+	/home/vagrant/gohome/src/go.uber.org/zap/sugar.go:182
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1.1
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:94
+runtime.call64
+	/home/vagrant/go/src/runtime/asm_amd64.s:515
+runtime.gopanic
+	/home/vagrant/go/src/runtime/panic.go:489
+runtime.panicindex
+	/home/vagrant/go/src/runtime/panic.go:28
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.unreflectResult
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/handlers.go:576
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.makeHTTPHandler.func2
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/handlers.go:215
+net/http.HandlerFunc.ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:1942
+net/http.(*ServeMux).ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:2238
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:111
+net/http.HandlerFunc.ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:1942
+net/http.serverHandler.ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:2568
+net/http.(*conn).serve
+	/home/vagrant/go/src/net/http/server.go:1825
+2017-07-26T20:49:28.451+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/get_account?chainid=%22annchain-test%22", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48576"}
+2017-07-26T20:49:28.512+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/favicon.ico", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48576"}
+2017-07-26T20:49:35.589+0800	DEBUG	server/handlers.go:207	HTTP HANDLER	{"reqError": "json: unsupported type: func() (io.ReadCloser, error)"}
+2017-07-26T20:49:35.590+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/get_account?chainid=_", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48584"}
+2017-07-26T20:49:35.789+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/favicon.ico", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48584"}
+2017-07-26T20:49:41.576+0800	DEBUG	server/handlers.go:207	HTTP HANDLER	{"reqError": "json: unsupported type: func() (io.ReadCloser, error)"}
+2017-07-26T20:49:41.576+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/get_account?chainid=annchain-test", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48590"}
+2017-07-26T20:49:41.634+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/favicon.ico", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48590"}
+2017-07-26T20:49:50.648+0800	DEBUG	server/handlers.go:207	HTTP HANDLER	{"reqError": "json: unsupported type: func() (io.ReadCloser, error)"}
+2017-07-26T20:49:50.648+0800	DEBUG	server/handlers.go:214	HTTPRestRPC	{"method": "/get_account", "args": [{"flag":408}], "returns": [{"flag":130}]}
+2017-07-26T20:49:50.648+0800	ERROR	server/http_server.go:94	Panic in RPC HTTP handler	{"error": "runtime error: index out of range", "stack": "goroutine 173 [running]:\nruntime/debug.Stack(0x9ab760, 0xc4217333e0, 0xdbc590)\n\t/home/vagrant/go/src/runtime/debug/stack.go:24 +0x79\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1.1(0xc4217be320, 0xc42006f500, 0xed10a86ee, 0xc426a9eec0, 0xdcb580, 0xc42179f000)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:94 +0x8d8\npanic(0x950700, 0xdbc590)\n\t/home/vagrant/go/src/runtime/panic.go:489 +0x2cf\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.unreflectResult(0xc4217be4c0, 0x1, 0x1, 0xc421557b58, 0x6, 0x6, 0xc4217be4c0)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/handlers.go:576 +0x27a\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.makeHTTPHandler.func2(0xd8cda0, 0xc4217be320, 0xc42179f000)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/handlers.go:215 +0x54d\nnet/http.HandlerFunc.ServeHTTP(0xc4202671e0, 0xd8cda0, 0xc4217be320, 0xc42179f000)\n\t/home/vagrant/go/src/net/http/server.go:1942 +0x44\nnet/http.(*ServeMux).ServeHTTP(0xc42042b230, 0xd8cda0, 0xc4217be320, 0xc42179f000)\n\t/home/vagrant/go/src/net/http/server.go:2238 +0x130\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1(0xd8d020, 0xc421617ce0, 0xc42179f000)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:111 +0x374\nnet/http.HandlerFunc.ServeHTTP(0xc42025c180, 0xd8d020, 0xc421617ce0, 0xc42179f000)\n\t/home/vagrant/go/src/net/http/server.go:1942 +0x44\nnet/http.serverHandler.ServeHTTP(0xc420262160, 0xd8d020, 0xc421617ce0, 0xc42179f000)\n\t/home/vagrant/go/src/net/http/server.go:2568 +0x92\nnet/http.(*conn).serve(0xc421740a00, 0xd8d8e0, 0xc4217bc140)\n\t/home/vagrant/go/src/net/http/server.go:1825 +0x612\ncreated by net/http.(*Server).Serve\n\t/home/vagrant/go/src/net/http/server.go:2668 +0x2ce\n"}
+go.uber.org/zap.Stack
+	/home/vagrant/gohome/src/go.uber.org/zap/field.go:190
+go.uber.org/zap.(*Logger).check
+	/home/vagrant/gohome/src/go.uber.org/zap/logger.go:273
+go.uber.org/zap.(*Logger).Check
+	/home/vagrant/gohome/src/go.uber.org/zap/logger.go:146
+go.uber.org/zap.(*SugaredLogger).log
+	/home/vagrant/gohome/src/go.uber.org/zap/sugar.go:224
+go.uber.org/zap.(*SugaredLogger).Errorw
+	/home/vagrant/gohome/src/go.uber.org/zap/sugar.go:182
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1.1
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:94
+runtime.call64
+	/home/vagrant/go/src/runtime/asm_amd64.s:515
+runtime.gopanic
+	/home/vagrant/go/src/runtime/panic.go:489
+runtime.panicindex
+	/home/vagrant/go/src/runtime/panic.go:28
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.unreflectResult
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/handlers.go:576
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.makeHTTPHandler.func2
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/handlers.go:215
+net/http.HandlerFunc.ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:1942
+net/http.(*ServeMux).ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:2238
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:111
+net/http.HandlerFunc.ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:1942
+net/http.serverHandler.ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:2568
+net/http.(*conn).serve
+	/home/vagrant/go/src/net/http/server.go:1825
+2017-07-26T20:49:50.649+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/get_account?chainid=%22annchain-test%22", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48602"}
+2017-07-26T20:49:50.737+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/favicon.ico", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48602"}
+2017-07-26T20:52:11.844+0800	DEBUG	server/handlers.go:207	HTTP HANDLER	{"reqError": "json: unsupported type: func() (io.ReadCloser, error)"}
+2017-07-26T20:52:11.844+0800	DEBUG	server/handlers.go:214	HTTPRestRPC	{"method": "/get_account", "args": [{"flag":408}], "returns": [{"flag":130}]}
+2017-07-26T20:52:11.844+0800	ERROR	server/http_server.go:94	Panic in RPC HTTP handler	{"error": "runtime error: index out of range", "stack": "goroutine 586 [running]:\nruntime/debug.Stack(0x9ab760, 0xc420ca8660, 0xdbc590)\n\t/home/vagrant/go/src/runtime/debug/stack.go:24 +0x79\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1.1(0xc420cb0fa0, 0xc42006f500, 0xed10a877b, 0xc4324f0933, 0xdcb580, 0xc422437d00)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:94 +0x8d8\npanic(0x950700, 0xdbc590)\n\t/home/vagrant/go/src/runtime/panic.go:489 +0x2cf\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.unreflectResult(0xc420cb1140, 0x1, 0x1, 0xc42011db58, 0x6, 0x6, 0xc420cb1140)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/handlers.go:576 +0x27a\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.makeHTTPHandler.func2(0xd8cda0, 0xc420cb0fa0, 0xc422437d00)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/handlers.go:215 +0x54d\nnet/http.HandlerFunc.ServeHTTP(0xc4202671e0, 0xd8cda0, 0xc420cb0fa0, 0xc422437d00)\n\t/home/vagrant/go/src/net/http/server.go:1942 +0x44\nnet/http.(*ServeMux).ServeHTTP(0xc42042b230, 0xd8cda0, 0xc420cb0fa0, 0xc422437d00)\n\t/home/vagrant/go/src/net/http/server.go:2238 +0x130\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1(0xd8d020, 0xc420ca0620, 0xc422437d00)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:111 +0x374\nnet/http.HandlerFunc.ServeHTTP(0xc42025c180, 0xd8d020, 0xc420ca0620, 0xc422437d00)\n\t/home/vagrant/go/src/net/http/server.go:1942 +0x44\nnet/http.serverHandler.ServeHTTP(0xc420262160, 0xd8d020, 0xc420ca0620, 0xc422437d00)\n\t/home/vagrant/go/src/net/http/server.go:2568 +0x92\nnet/http.(*conn).serve(0xc42271f720, 0xd8d8e0, 0xc4223c9540)\n\t/home/vagrant/go/src/net/http/server.go:1825 +0x612\ncreated by net/http.(*Server).Serve\n\t/home/vagrant/go/src/net/http/server.go:2668 +0x2ce\n"}
+go.uber.org/zap.Stack
+	/home/vagrant/gohome/src/go.uber.org/zap/field.go:190
+go.uber.org/zap.(*Logger).check
+	/home/vagrant/gohome/src/go.uber.org/zap/logger.go:273
+go.uber.org/zap.(*Logger).Check
+	/home/vagrant/gohome/src/go.uber.org/zap/logger.go:146
+go.uber.org/zap.(*SugaredLogger).log
+	/home/vagrant/gohome/src/go.uber.org/zap/sugar.go:224
+go.uber.org/zap.(*SugaredLogger).Errorw
+	/home/vagrant/gohome/src/go.uber.org/zap/sugar.go:182
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1.1
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:94
+runtime.call64
+	/home/vagrant/go/src/runtime/asm_amd64.s:515
+runtime.gopanic
+	/home/vagrant/go/src/runtime/panic.go:489
+runtime.panicindex
+	/home/vagrant/go/src/runtime/panic.go:28
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.unreflectResult
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/handlers.go:576
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.makeHTTPHandler.func2
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/handlers.go:215
+net/http.HandlerFunc.ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:1942
+net/http.(*ServeMux).ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:2238
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:111
+net/http.HandlerFunc.ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:1942
+net/http.serverHandler.ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:2568
+net/http.(*conn).serve
+	/home/vagrant/go/src/net/http/server.go:1825
+2017-07-26T20:52:11.844+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/get_account?chainid=%22annchain-test%22&address=%22ss%22", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48652"}
+2017-07-26T20:52:11.909+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/favicon.ico", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48652"}
+2017-07-26T20:53:41.271+0800	INFO	node/node.go:113	Stopping Node
+2017-07-26T20:53:48.363+0800	DEBUG	log/zap.go:24	Starting zap! Have your fun!
+2017-07-26T20:53:49.339+0800	INFO	server/http_server.go:36	Starting RPC HTTP server on tcp socket 0.0.0.0:46657
+2017-07-26T20:53:56.186+0800	DEBUG	server/handlers.go:207	HTTP HANDLER	{"reqError": "json: unsupported type: func() (io.ReadCloser, error)"}
+2017-07-26T20:53:56.186+0800	ERROR	server/http_server.go:94	Panic in RPC HTTP handler	{"error": "reflect: Call with too few input arguments", "stack": "goroutine 101 [running]:\nruntime/debug.Stack(0x9ab7e0, 0xc421d906c0, 0xc421dc8cc0)\n\t/home/vagrant/go/src/runtime/debug/stack.go:24 +0x79\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1.1(0xc421da6a40, 0xc42006e1e0, 0xed10a87e4, 0xc40b1c71e1, 0xdcb580, 0xc421d9ae00)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:94 +0x8d8\npanic(0x921160, 0xc421dc8cc0)\n\t/home/vagrant/go/src/runtime/panic.go:489 +0x2cf\nreflect.Value.call(0x93e860, 0xc4201e5c40, 0x13, 0x9e3e33, 0x4, 0xc421da7840, 0x1, 0x1, 0xc421dc8c70, 0xc421da7848, ...)\n\t/home/vagrant/go/src/reflect/value.go:358 +0x135f\nreflect.Value.Call(0x93e860, 0xc4201e5c40, 0x13, 0xc421da7840, 0x1, 0x1, 0x0, 0xc4201eaa68, 0x667cda)\n\t/home/vagrant/go/src/reflect/value.go:302 +0xa4\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.makeHTTPHandler.func2(0xd8cda0, 0xc421da6a40, 0xc421d9ae00)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/handlers.go:213 +0x230\nnet/http.HandlerFunc.ServeHTTP(0xc42045f860, 0xd8cda0, 0xc421da6a40, 0xc421d9ae00)\n\t/home/vagrant/go/src/net/http/server.go:1942 +0x44\nnet/http.(*ServeMux).ServeHTTP(0xc42042a510, 0xd8cda0, 0xc421da6a40, 0xc421d9ae00)\n\t/home/vagrant/go/src/net/http/server.go:2238 +0x130\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1(0xd8d020, 0xc421bb3c00, 0xc421d9ae00)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:111 +0x374\nnet/http.HandlerFunc.ServeHTTP(0xc4200c89e0, 0xd8d020, 0xc421bb3c00, 0xc421d9ae00)\n\t/home/vagrant/go/src/net/http/server.go:1942 +0x44\nnet/http.serverHandler.ServeHTTP(0xc421c28000, 0xd8d020, 0xc421bb3c00, 0xc421d9ae00)\n\t/home/vagrant/go/src/net/http/server.go:2568 +0x92\nnet/http.(*conn).serve(0xc420324b40, 0xd8d8e0, 0xc421d9eb00)\n\t/home/vagrant/go/src/net/http/server.go:1825 +0x612\ncreated by net/http.(*Server).Serve\n\t/home/vagrant/go/src/net/http/server.go:2668 +0x2ce\n"}
+go.uber.org/zap.Stack
+	/home/vagrant/gohome/src/go.uber.org/zap/field.go:190
+go.uber.org/zap.(*Logger).check
+	/home/vagrant/gohome/src/go.uber.org/zap/logger.go:273
+go.uber.org/zap.(*Logger).Check
+	/home/vagrant/gohome/src/go.uber.org/zap/logger.go:146
+go.uber.org/zap.(*SugaredLogger).log
+	/home/vagrant/gohome/src/go.uber.org/zap/sugar.go:224
+go.uber.org/zap.(*SugaredLogger).Errorw
+	/home/vagrant/gohome/src/go.uber.org/zap/sugar.go:182
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1.1
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:94
+runtime.call64
+	/home/vagrant/go/src/runtime/asm_amd64.s:515
+runtime.gopanic
+	/home/vagrant/go/src/runtime/panic.go:489
+reflect.Value.call
+	/home/vagrant/go/src/reflect/value.go:358
+reflect.Value.Call
+	/home/vagrant/go/src/reflect/value.go:302
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.makeHTTPHandler.func2
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/handlers.go:213
+net/http.HandlerFunc.ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:1942
+net/http.(*ServeMux).ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:2238
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:111
+net/http.HandlerFunc.ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:1942
+net/http.serverHandler.ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:2568
+net/http.(*conn).serve
+	/home/vagrant/go/src/net/http/server.go:1825
+2017-07-26T20:53:56.187+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/get_account?chainid=%22annchain-test%22&address=%22ss%22", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48706"}
+2017-07-26T20:53:56.356+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/favicon.ico", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48706"}
+2017-07-26T20:53:59.474+0800	DEBUG	server/handlers.go:207	HTTP HANDLER	{"reqError": "json: unsupported type: func() (io.ReadCloser, error)"}
+2017-07-26T20:53:59.474+0800	ERROR	server/http_server.go:94	Panic in RPC HTTP handler	{"error": "reflect: Call with too few input arguments", "stack": "goroutine 101 [running]:\nruntime/debug.Stack(0x9ab7e0, 0xc421d91da0, 0xc42150f2f0)\n\t/home/vagrant/go/src/runtime/debug/stack.go:24 +0x79\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1.1(0xc421510ce0, 0xc42006e1e0, 0xed10a87e7, 0xc41c41b19e, 0xdcb580, 0xc421522200)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:94 +0x8d8\npanic(0x921160, 0xc42150f2f0)\n\t/home/vagrant/go/src/runtime/panic.go:489 +0x2cf\nreflect.Value.call(0x93e860, 0xc4201e5c40, 0x13, 0x9e3e33, 0x4, 0xc421510e60, 0x1, 0x1, 0xc42150f2a0, 0xc421510e68, ...)\n\t/home/vagrant/go/src/reflect/value.go:358 +0x135f\nreflect.Value.Call(0x93e860, 0xc4201e5c40, 0x13, 0xc421510e60, 0x1, 0x1, 0x0, 0xc421b4ba68, 0x667cda)\n\t/home/vagrant/go/src/reflect/value.go:302 +0xa4\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.makeHTTPHandler.func2(0xd8cda0, 0xc421510ce0, 0xc421522200)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/handlers.go:213 +0x230\nnet/http.HandlerFunc.ServeHTTP(0xc42045f860, 0xd8cda0, 0xc421510ce0, 0xc421522200)\n\t/home/vagrant/go/src/net/http/server.go:1942 +0x44\nnet/http.(*ServeMux).ServeHTTP(0xc42042a510, 0xd8cda0, 0xc421510ce0, 0xc421522200)\n\t/home/vagrant/go/src/net/http/server.go:2238 +0x130\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1(0xd8d020, 0xc421de9420, 0xc421522200)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:111 +0x374\nnet/http.HandlerFunc.ServeHTTP(0xc4200c89e0, 0xd8d020, 0xc421de9420, 0xc421522200)\n\t/home/vagrant/go/src/net/http/server.go:1942 +0x44\nnet/http.serverHandler.ServeHTTP(0xc421c28000, 0xd8d020, 0xc421de9420, 0xc421522200)\n\t/home/vagrant/go/src/net/http/server.go:2568 +0x92\nnet/http.(*conn).serve(0xc420324b40, 0xd8d8e0, 0xc421d9eb00)\n\t/home/vagrant/go/src/net/http/server.go:1825 +0x612\ncreated by net/http.(*Server).Serve\n\t/home/vagrant/go/src/net/http/server.go:2668 +0x2ce\n"}
+go.uber.org/zap.Stack
+	/home/vagrant/gohome/src/go.uber.org/zap/field.go:190
+go.uber.org/zap.(*Logger).check
+	/home/vagrant/gohome/src/go.uber.org/zap/logger.go:273
+go.uber.org/zap.(*Logger).Check
+	/home/vagrant/gohome/src/go.uber.org/zap/logger.go:146
+go.uber.org/zap.(*SugaredLogger).log
+	/home/vagrant/gohome/src/go.uber.org/zap/sugar.go:224
+go.uber.org/zap.(*SugaredLogger).Errorw
+	/home/vagrant/gohome/src/go.uber.org/zap/sugar.go:182
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1.1
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:94
+runtime.call64
+	/home/vagrant/go/src/runtime/asm_amd64.s:515
+runtime.gopanic
+	/home/vagrant/go/src/runtime/panic.go:489
+reflect.Value.call
+	/home/vagrant/go/src/reflect/value.go:358
+reflect.Value.Call
+	/home/vagrant/go/src/reflect/value.go:302
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.makeHTTPHandler.func2
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/handlers.go:213
+net/http.HandlerFunc.ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:1942
+net/http.(*ServeMux).ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:2238
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:111
+net/http.HandlerFunc.ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:1942
+net/http.serverHandler.ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:2568
+net/http.(*conn).serve
+	/home/vagrant/go/src/net/http/server.go:1825
+2017-07-26T20:53:59.474+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/get_account?chainid=%22annchain-test%22&address=%22ss%22", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48706"}
+2017-07-26T20:53:59.547+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/favicon.ico", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48706"}
+2017-07-26T20:54:14.669+0800	DEBUG	server/handlers.go:207	HTTP HANDLER	{"reqError": "json: unsupported type: func() (io.ReadCloser, error)"}
+2017-07-26T20:54:14.669+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/get_account?chainid=annchain-test&address=%22ss%22", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48718"}
+2017-07-26T20:54:14.828+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/favicon.ico", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48718"}
+2017-07-26T20:54:27.360+0800	DEBUG	server/handlers.go:207	HTTP HANDLER	{"reqError": "json: unsupported type: func() (io.ReadCloser, error)"}
+2017-07-26T20:54:27.360+0800	ERROR	server/http_server.go:94	Panic in RPC HTTP handler	{"error": "reflect: Call with too few input arguments", "stack": "goroutine 60 [running]:\nruntime/debug.Stack(0x9ab7e0, 0xc42224d6e0, 0xc4224aa570)\n\t/home/vagrant/go/src/runtime/debug/stack.go:24 +0x79\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1.1(0xc422493440, 0xc42006e1e0, 0xed10a8803, 0xc4157bcf3d, 0xdcb580, 0xc422487200)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:94 +0x8d8\npanic(0x921160, 0xc4224aa570)\n\t/home/vagrant/go/src/runtime/panic.go:489 +0x2cf\nreflect.Value.call(0x93e860, 0xc4201e5c40, 0x13, 0x9e3e33, 0x4, 0xc4224935a0, 0x1, 0x1, 0xc4224aa520, 0xc4224935a8, ...)\n\t/home/vagrant/go/src/reflect/value.go:358 +0x135f\nreflect.Value.Call(0x93e860, 0xc4201e5c40, 0x13, 0xc4224935a0, 0x1, 0x1, 0x0, 0xc421bf0a68, 0x667cda)\n\t/home/vagrant/go/src/reflect/value.go:302 +0xa4\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.makeHTTPHandler.func2(0xd8cda0, 0xc422493440, 0xc422487200)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/handlers.go:213 +0x230\nnet/http.HandlerFunc.ServeHTTP(0xc42045f860, 0xd8cda0, 0xc422493440, 0xc422487200)\n\t/home/vagrant/go/src/net/http/server.go:1942 +0x44\nnet/http.(*ServeMux).ServeHTTP(0xc42042a510, 0xd8cda0, 0xc422493440, 0xc422487200)\n\t/home/vagrant/go/src/net/http/server.go:2238 +0x130\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1(0xd8d020, 0xc42225b500, 0xc422487200)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:111 +0x374\nnet/http.HandlerFunc.ServeHTTP(0xc4200c89e0, 0xd8d020, 0xc42225b500, 0xc422487200)\n\t/home/vagrant/go/src/net/http/server.go:1942 +0x44\nnet/http.serverHandler.ServeHTTP(0xc421c28000, 0xd8d020, 0xc42225b500, 0xc422487200)\n\t/home/vagrant/go/src/net/http/server.go:2568 +0x92\nnet/http.(*conn).serve(0xc422252dc0, 0xd8d8e0, 0xc422490940)\n\t/home/vagrant/go/src/net/http/server.go:1825 +0x612\ncreated by net/http.(*Server).Serve\n\t/home/vagrant/go/src/net/http/server.go:2668 +0x2ce\n"}
+go.uber.org/zap.Stack
+	/home/vagrant/gohome/src/go.uber.org/zap/field.go:190
+go.uber.org/zap.(*Logger).check
+	/home/vagrant/gohome/src/go.uber.org/zap/logger.go:273
+go.uber.org/zap.(*Logger).Check
+	/home/vagrant/gohome/src/go.uber.org/zap/logger.go:146
+go.uber.org/zap.(*SugaredLogger).log
+	/home/vagrant/gohome/src/go.uber.org/zap/sugar.go:224
+go.uber.org/zap.(*SugaredLogger).Errorw
+	/home/vagrant/gohome/src/go.uber.org/zap/sugar.go:182
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1.1
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:94
+runtime.call64
+	/home/vagrant/go/src/runtime/asm_amd64.s:515
+runtime.gopanic
+	/home/vagrant/go/src/runtime/panic.go:489
+reflect.Value.call
+	/home/vagrant/go/src/reflect/value.go:358
+reflect.Value.Call
+	/home/vagrant/go/src/reflect/value.go:302
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.makeHTTPHandler.func2
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/handlers.go:213
+net/http.HandlerFunc.ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:1942
+net/http.(*ServeMux).ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:2238
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:111
+net/http.HandlerFunc.ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:1942
+net/http.serverHandler.ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:2568
+net/http.(*conn).serve
+	/home/vagrant/go/src/net/http/server.go:1825
+2017-07-26T20:54:27.360+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/get_account?chainid=%22annchain-test%22&address=%22ss%22", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48724"}
+2017-07-26T20:54:27.533+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/favicon.ico", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48724"}
+2017-07-26T20:54:43.702+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48730"}
+2017-07-26T20:54:43.871+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/favicon.ico", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48730"}
+2017-07-26T20:54:47.248+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48730"}
+2017-07-26T20:54:47.316+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/favicon.ico", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48730"}
+2017-07-26T20:54:47.890+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48730"}
+2017-07-26T20:54:47.946+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/favicon.ico", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48730"}
+2017-07-26T20:54:48.052+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48730"}
+2017-07-26T20:54:48.099+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/favicon.ico", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48730"}
+2017-07-26T20:54:48.242+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48730"}
+2017-07-26T20:54:48.283+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/favicon.ico", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48730"}
+2017-07-26T20:54:48.415+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48730"}
+2017-07-26T20:54:48.468+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/favicon.ico", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48730"}
+2017-07-26T20:54:48.590+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48730"}
+2017-07-26T20:54:48.634+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/favicon.ico", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48730"}
+2017-07-26T20:54:55.086+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48754"}
+2017-07-26T20:54:55.262+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/favicon.ico", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48754"}
+2017-07-26T20:55:02.576+0800	DEBUG	server/handlers.go:207	HTTP HANDLER	{"reqError": "json: unsupported type: func() (io.ReadCloser, error)"}
+2017-07-26T20:55:02.576+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/get_account?chainid=_", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48768"}
+2017-07-26T20:55:02.772+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/favicon.ico", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48768"}
+2017-07-26T20:55:16.127+0800	DEBUG	server/handlers.go:207	HTTP HANDLER	{"reqError": "json: unsupported type: func() (io.ReadCloser, error)"}
+2017-07-26T20:55:16.127+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/get_account?chainid=%27annchain_test%27", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48782"}
+2017-07-26T20:55:16.187+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/favicon.ico", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48782"}
+2017-07-26T20:55:27.927+0800	DEBUG	server/handlers.go:207	HTTP HANDLER	{"reqError": "json: unsupported type: func() (io.ReadCloser, error)"}
+2017-07-26T20:55:27.928+0800	ERROR	server/http_server.go:94	Panic in RPC HTTP handler	{"error": "reflect: Call with too few input arguments", "stack": "goroutine 397 [running]:\nruntime/debug.Stack(0x9ab7e0, 0xc421d907e0, 0xc4226dd070)\n\t/home/vagrant/go/src/runtime/debug/stack.go:24 +0x79\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1.1(0xc4218a5840, 0xc42006e1e0, 0xed10a883f, 0xc4374ef339, 0xdcb580, 0xc4226f4000)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:94 +0x8d8\npanic(0x921160, 0xc4226dd070)\n\t/home/vagrant/go/src/runtime/panic.go:489 +0x2cf\nreflect.Value.call(0x93e860, 0xc4201e5c40, 0x13, 0x9e3e33, 0x4, 0xc4218a59c0, 0x1, 0x1, 0xc4226dd020, 0xc4218a59c8, ...)\n\t/home/vagrant/go/src/reflect/value.go:358 +0x135f\nreflect.Value.Call(0x93e860, 0xc4201e5c40, 0x13, 0xc4218a59c0, 0x1, 0x1, 0x0, 0xc4201eea68, 0x667cda)\n\t/home/vagrant/go/src/reflect/value.go:302 +0xa4\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.makeHTTPHandler.func2(0xd8cda0, 0xc4218a5840, 0xc4226f4000)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/handlers.go:213 +0x230\nnet/http.HandlerFunc.ServeHTTP(0xc42045f860, 0xd8cda0, 0xc4218a5840, 0xc4226f4000)\n\t/home/vagrant/go/src/net/http/server.go:1942 +0x44\nnet/http.(*ServeMux).ServeHTTP(0xc42042a510, 0xd8cda0, 0xc4218a5840, 0xc4226f4000)\n\t/home/vagrant/go/src/net/http/server.go:2238 +0x130\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1(0xd8d020, 0xc4226d2460, 0xc4226f4000)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:111 +0x374\nnet/http.HandlerFunc.ServeHTTP(0xc4200c89e0, 0xd8d020, 0xc4226d2460, 0xc4226f4000)\n\t/home/vagrant/go/src/net/http/server.go:1942 +0x44\nnet/http.serverHandler.ServeHTTP(0xc421c28000, 0xd8d020, 0xc4226d2460, 0xc4226f4000)\n\t/home/vagrant/go/src/net/http/server.go:2568 +0x92\nnet/http.(*conn).serve(0xc42042dc20, 0xd8d8e0, 0xc4202d1a40)\n\t/home/vagrant/go/src/net/http/server.go:1825 +0x612\ncreated by net/http.(*Server).Serve\n\t/home/vagrant/go/src/net/http/server.go:2668 +0x2ce\n"}
+go.uber.org/zap.Stack
+	/home/vagrant/gohome/src/go.uber.org/zap/field.go:190
+go.uber.org/zap.(*Logger).check
+	/home/vagrant/gohome/src/go.uber.org/zap/logger.go:273
+go.uber.org/zap.(*Logger).Check
+	/home/vagrant/gohome/src/go.uber.org/zap/logger.go:146
+go.uber.org/zap.(*SugaredLogger).log
+	/home/vagrant/gohome/src/go.uber.org/zap/sugar.go:224
+go.uber.org/zap.(*SugaredLogger).Errorw
+	/home/vagrant/gohome/src/go.uber.org/zap/sugar.go:182
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1.1
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:94
+runtime.call64
+	/home/vagrant/go/src/runtime/asm_amd64.s:515
+runtime.gopanic
+	/home/vagrant/go/src/runtime/panic.go:489
+reflect.Value.call
+	/home/vagrant/go/src/reflect/value.go:358
+reflect.Value.Call
+	/home/vagrant/go/src/reflect/value.go:302
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.makeHTTPHandler.func2
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/handlers.go:213
+net/http.HandlerFunc.ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:1942
+net/http.(*ServeMux).ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:2238
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:111
+net/http.HandlerFunc.ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:1942
+net/http.serverHandler.ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:2568
+net/http.(*conn).serve
+	/home/vagrant/go/src/net/http/server.go:1825
+2017-07-26T20:55:27.928+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/get_account?chainid=%22annchain-test%22", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48788"}
+2017-07-26T20:55:28.094+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/favicon.ico", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48788"}
+2017-07-26T20:55:45.651+0800	DEBUG	server/handlers.go:207	HTTP HANDLER	{"reqError": "json: unsupported type: func() (io.ReadCloser, error)"}
+2017-07-26T20:55:45.652+0800	ERROR	server/http_server.go:94	Panic in RPC HTTP handler	{"error": "reflect: Call with too few input arguments", "stack": "goroutine 472 [running]:\nruntime/debug.Stack(0x9ab7e0, 0xc422502060, 0xc421e85b80)\n\t/home/vagrant/go/src/runtime/debug/stack.go:24 +0x79\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1.1(0xc421e7fcc0, 0xc42006e1e0, 0xed10a8851, 0xc426db5591, 0xdcb580, 0xc4224c9b00)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:94 +0x8d8\npanic(0x921160, 0xc421e85b80)\n\t/home/vagrant/go/src/runtime/panic.go:489 +0x2cf\nreflect.Value.call(0x93e860, 0xc4201e5c40, 0x13, 0x9e3e33, 0x4, 0xc421e7fe20, 0x1, 0x1, 0xc421e85b30, 0xc421e7fe28, ...)\n\t/home/vagrant/go/src/reflect/value.go:358 +0x135f\nreflect.Value.Call(0x93e860, 0xc4201e5c40, 0x13, 0xc421e7fe20, 0x1, 0x1, 0x0, 0xc421beea68, 0x667cda)\n\t/home/vagrant/go/src/reflect/value.go:302 +0xa4\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.makeHTTPHandler.func2(0xd8cda0, 0xc421e7fcc0, 0xc4224c9b00)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/handlers.go:213 +0x230\nnet/http.HandlerFunc.ServeHTTP(0xc42045f860, 0xd8cda0, 0xc421e7fcc0, 0xc4224c9b00)\n\t/home/vagrant/go/src/net/http/server.go:1942 +0x44\nnet/http.(*ServeMux).ServeHTTP(0xc42042a510, 0xd8cda0, 0xc421e7fcc0, 0xc4224c9b00)\n\t/home/vagrant/go/src/net/http/server.go:2238 +0x130\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1(0xd8d020, 0xc421e862a0, 0xc4224c9b00)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:111 +0x374\nnet/http.HandlerFunc.ServeHTTP(0xc4200c89e0, 0xd8d020, 0xc421e862a0, 0xc4224c9b00)\n\t/home/vagrant/go/src/net/http/server.go:1942 +0x44\nnet/http.serverHandler.ServeHTTP(0xc421c28000, 0xd8d020, 0xc421e862a0, 0xc4224c9b00)\n\t/home/vagrant/go/src/net/http/server.go:2568 +0x92\nnet/http.(*conn).serve(0xc4222614a0, 0xd8d8e0, 0xc4224d4d80)\n\t/home/vagrant/go/src/net/http/server.go:1825 +0x612\ncreated by net/http.(*Server).Serve\n\t/home/vagrant/go/src/net/http/server.go:2668 +0x2ce\n"}
+go.uber.org/zap.Stack
+	/home/vagrant/gohome/src/go.uber.org/zap/field.go:190
+go.uber.org/zap.(*Logger).check
+	/home/vagrant/gohome/src/go.uber.org/zap/logger.go:273
+go.uber.org/zap.(*Logger).Check
+	/home/vagrant/gohome/src/go.uber.org/zap/logger.go:146
+go.uber.org/zap.(*SugaredLogger).log
+	/home/vagrant/gohome/src/go.uber.org/zap/sugar.go:224
+go.uber.org/zap.(*SugaredLogger).Errorw
+	/home/vagrant/gohome/src/go.uber.org/zap/sugar.go:182
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1.1
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:94
+runtime.call64
+	/home/vagrant/go/src/runtime/asm_amd64.s:515
+runtime.gopanic
+	/home/vagrant/go/src/runtime/panic.go:489
+reflect.Value.call
+	/home/vagrant/go/src/reflect/value.go:358
+reflect.Value.Call
+	/home/vagrant/go/src/reflect/value.go:302
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.makeHTTPHandler.func2
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/handlers.go:213
+net/http.HandlerFunc.ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:1942
+net/http.(*ServeMux).ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:2238
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:111
+net/http.HandlerFunc.ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:1942
+net/http.serverHandler.ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:2568
+net/http.(*conn).serve
+	/home/vagrant/go/src/net/http/server.go:1825
+2017-07-26T20:55:45.652+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/get_account?chainid=%22annchain-test%22&address=%22ss%22", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48794"}
+2017-07-26T20:55:45.819+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/favicon.ico", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48794"}
+2017-07-26T20:55:54.829+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48804"}
+2017-07-26T20:55:54.892+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/favicon.ico", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48804"}
+2017-07-26T20:57:28.067+0800	INFO	node/node.go:113	Stopping Node
+2017-07-26T20:57:32.464+0800	DEBUG	log/zap.go:24	Starting zap! Have your fun!
+2017-07-26T20:57:33.088+0800	INFO	server/http_server.go:36	Starting RPC HTTP server on tcp socket 0.0.0.0:46657
+2017-07-26T20:57:37.759+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48846"}
+2017-07-26T20:57:37.930+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/favicon.ico", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48846"}
+2017-07-26T20:57:40.357+0800	DEBUG	server/handlers.go:207	HTTP HANDLER	{"reqError": "json: unsupported type: func() (io.ReadCloser, error)"}
+2017-07-26T20:57:40.357+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/get_account?chainid=_&address=_", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48846"}
+2017-07-26T20:57:40.551+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/favicon.ico", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48846"}
+2017-07-26T20:57:58.273+0800	DEBUG	server/handlers.go:207	HTTP HANDLER	{"reqError": "json: unsupported type: func() (io.ReadCloser, error)"}
+2017-07-26T20:57:58.273+0800	DEBUG	server/handlers.go:214	HTTPRestRPC	{"method": "/get_account", "args": [{"flag":408},{"flag":408}], "returns": [{"flag":130}]}
+2017-07-26T20:57:58.273+0800	ERROR	server/http_server.go:94	Panic in RPC HTTP handler	{"error": "runtime error: index out of range", "stack": "goroutine 133 [running]:\nruntime/debug.Stack(0x9ab7e0, 0xc4215e7c20, 0xdbc590)\n\t/home/vagrant/go/src/runtime/debug/stack.go:24 +0x79\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1.1(0xc42169d600, 0xc420488960, 0xed10a88d6, 0xc41049b614, 0xdcb580, 0xc421693000)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:94 +0x8d8\npanic(0x950780, 0xdbc590)\n\t/home/vagrant/go/src/runtime/panic.go:489 +0x2cf\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.unreflectResult(0xc42169d7a0, 0x1, 0x1, 0xc421d05b58, 0x6, 0x6, 0xc42169d7a0)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/handlers.go:576 +0x27a\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.makeHTTPHandler.func2(0xd8cda0, 0xc42169d600, 0xc421693000)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/handlers.go:215 +0x54d\nnet/http.HandlerFunc.ServeHTTP(0xc420127ec0, 0xd8cda0, 0xc42169d600, 0xc421693000)\n\t/home/vagrant/go/src/net/http/server.go:1942 +0x44\nnet/http.(*ServeMux).ServeHTTP(0xc420017da0, 0xd8cda0, 0xc42169d600, 0xc421693000)\n\t/home/vagrant/go/src/net/http/server.go:2238 +0x130\ngitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1(0xd8d020, 0xc4215e9880, 0xc421693000)\n\t/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:111 +0x374\nnet/http.HandlerFunc.ServeHTTP(0xc42015e1a0, 0xd8d020, 0xc4215e9880, 0xc421693000)\n\t/home/vagrant/go/src/net/http/server.go:1942 +0x44\nnet/http.serverHandler.ServeHTTP(0xc420224160, 0xd8d020, 0xc4215e9880, 0xc421693000)\n\t/home/vagrant/go/src/net/http/server.go:2568 +0x92\nnet/http.(*conn).serve(0xc4215fafa0, 0xd8d8e0, 0xc4216a2440)\n\t/home/vagrant/go/src/net/http/server.go:1825 +0x612\ncreated by net/http.(*Server).Serve\n\t/home/vagrant/go/src/net/http/server.go:2668 +0x2ce\n"}
+go.uber.org/zap.Stack
+	/home/vagrant/gohome/src/go.uber.org/zap/field.go:190
+go.uber.org/zap.(*Logger).check
+	/home/vagrant/gohome/src/go.uber.org/zap/logger.go:273
+go.uber.org/zap.(*Logger).Check
+	/home/vagrant/gohome/src/go.uber.org/zap/logger.go:146
+go.uber.org/zap.(*SugaredLogger).log
+	/home/vagrant/gohome/src/go.uber.org/zap/sugar.go:224
+go.uber.org/zap.(*SugaredLogger).Errorw
+	/home/vagrant/gohome/src/go.uber.org/zap/sugar.go:182
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1.1
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:94
+runtime.call64
+	/home/vagrant/go/src/runtime/asm_amd64.s:515
+runtime.gopanic
+	/home/vagrant/go/src/runtime/panic.go:489
+runtime.panicindex
+	/home/vagrant/go/src/runtime/panic.go:28
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.unreflectResult
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/handlers.go:576
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.makeHTTPHandler.func2
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/handlers.go:215
+net/http.HandlerFunc.ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:1942
+net/http.(*ServeMux).ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:2238
+gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server.RecoverAndLogHandler.func1
+	/home/vagrant/gohome/src/gitlab.zhonganonline.com/ann/ann-module/lib/go-rpc/server/http_server.go:111
+net/http.HandlerFunc.ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:1942
+net/http.serverHandler.ServeHTTP
+	/home/vagrant/go/src/net/http/server.go:2568
+net/http.(*conn).serve
+	/home/vagrant/go/src/net/http/server.go:1825
+2017-07-26T20:57:58.273+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/get_account?chainid=%22annchain-test%22&address=%22ss%22", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48864"}
+2017-07-26T20:57:58.340+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/favicon.ico", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48864"}
+2017-07-26T21:02:26.640+0800	INFO	node/node.go:113	Stopping Node
+2017-07-26T21:02:30.874+0800	DEBUG	log/zap.go:24	Starting zap! Have your fun!
+2017-07-26T21:02:31.688+0800	INFO	server/http_server.go:36	Starting RPC HTTP server on tcp socket 0.0.0.0:46657
+2017-07-26T21:02:36.242+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48944"}
+2017-07-26T21:02:36.414+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/favicon.ico", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48944"}
+2017-07-26T21:02:38.784+0800	DEBUG	server/handlers.go:207	HTTP HANDLER	{"reqError": "json: unsupported type: func() (io.ReadCloser, error)"}
+2017-07-26T21:02:38.785+0800	DEBUG	server/handlers.go:214	HTTPRestRPC	{"method": "/get_account", "args": [{"flag":408},{"flag":408}], "returns": [{"flag":148},{"flag":148}]}
+2017-07-26T21:02:38.785+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/get_account?chainid=%22annchain-test%22&address=%22ss%22", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48944"}
+2017-07-26T21:02:38.947+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/favicon.ico", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:48944"}
+2017-07-26T21:06:31.255+0800	INFO	node/node.go:113	Stopping Node
+2017-07-26T21:06:35.298+0800	DEBUG	log/zap.go:24	Starting zap! Have your fun!
+2017-07-26T21:06:36.364+0800	INFO	server/http_server.go:36	Starting RPC HTTP server on tcp socket 0.0.0.0:46657
+2017-07-26T21:10:33.970+0800	DEBUG	server/handlers.go:207	HTTP HANDLER	{"reqError": "json: unsupported type: func() (io.ReadCloser, error)"}
+2017-07-26T21:10:33.971+0800	DEBUG	server/handlers.go:214	HTTPRestRPC	{"method": "/get_account", "args": [{"flag":408},{"flag":408}], "returns": [{"flag":153},{"flag":148}]}
+2017-07-26T21:10:33.971+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/get_account?chainid=%22annchain-test%22&address=%22ss%22", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:49078"}
+2017-07-26T21:10:34.135+0800	DEBUG	server/http_server.go:108	Served RPC HTTP response	{"method": "GET", "url": "/favicon.ico", "status": 200, "duration": 0, "remoteAddr": "127.0.0.1:49078"}
